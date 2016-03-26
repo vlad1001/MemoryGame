@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Memory_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,240 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper_dark_blue_2" translatesAutoresizingMaskIntoConstraints="NO" id="iOu-3N-d2w">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zAZ-F8-kyz">
+                                <rect key="frame" x="39" y="44" width="520" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WfJ-L3-Db6">
+                                        <rect key="frame" x="0.0" y="0.0" width="520" height="52"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJt-mf-Z18">
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="me7-hm-1wP">
+                                                <rect key="frame" x="133" y="0.0" width="122" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBg-uJ-7ac">
+                                                <rect key="frame" x="265" y="0.0" width="123" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBg-7r-soN">
+                                                <rect key="frame" x="398" y="0.0" width="122" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RMV-Zv-4bG">
+                                        <rect key="frame" x="0.0" y="62" width="520" height="52"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sel-km-YU3">
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nls-FH-fBf">
+                                                <rect key="frame" x="133" y="0.0" width="122" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjM-dI-n1F">
+                                                <rect key="frame" x="265" y="0.0" width="123" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpP-c4-HBM">
+                                                <rect key="frame" x="398" y="0.0" width="122" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DdV-BC-aKE">
+                                        <rect key="frame" x="0.0" y="124" width="520" height="52"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHl-pi-O2Y">
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3E2-Dc-g7m">
+                                                <rect key="frame" x="133" y="0.0" width="122" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJE-gF-YjN">
+                                                <rect key="frame" x="265" y="0.0" width="123" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ie-BB-dNz">
+                                                <rect key="frame" x="398" y="0.0" width="122" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UDm-I6-bXf">
+                                        <rect key="frame" x="0.0" y="186" width="520" height="52"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIg-in-MAg">
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhk-T2-167">
+                                                <rect key="frame" x="133" y="0.0" width="122" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoG-aA-cmp">
+                                                <rect key="frame" x="265" y="0.0" width="123" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJ7-ET-R93">
+                                                <rect key="frame" x="398" y="0.0" width="122" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0vO-7j-bdV">
+                                        <rect key="frame" x="0.0" y="248" width="520" height="52"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGc-yI-9Va">
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                            <button opaque="NO" tag="18" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdp-B8-u5i">
+                                                <rect key="frame" x="133" y="0.0" width="122" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mq-U8-klD">
+                                                <rect key="frame" x="265" y="0.0" width="123" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                            <button opaque="NO" tag="20" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNV-wl-i98">
+                                                <rect key="frame" x="398" y="0.0" width="122" height="52"/>
+                                                <state key="normal" image="card0"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.78474344500000004" green="0.90678905789999997" blue="0.9485642997" alpha="1" colorSpace="calibratedRGB"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5s-Vx-rHf">
+                                <rect key="frame" x="278" y="408" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="hg1-Uf-W8Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hg1-Uf-W8Y"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Geh-ys-EJx">
+                                <rect key="frame" x="304" y="437" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="IF0-zn-vVH"/>
+                                    <constraint firstAttribute="width" constant="80" id="czi-kV-bda"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="pause"/>
+                                <connections>
+                                    <action selector="onPausePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FwI-LK-hR5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMU-fk-mUO">
+                                <rect key="frame" x="196" y="437" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="P0r-mt-krD"/>
+                                    <constraint firstAttribute="height" constant="80" id="y66-0x-lyL"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="restart"/>
+                                <connections>
+                                    <action selector="onRestartClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYN-ii-cBB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Geh-ys-EJx" secondAttribute="trailing" constant="20" id="1z5-aK-DE6"/>
+                            <constraint firstItem="Geh-ys-EJx" firstAttribute="leading" secondItem="NMU-fk-mUO" secondAttribute="trailing" constant="8" id="56b-n2-MXR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NMU-fk-mUO" secondAttribute="bottom" constant="20" id="LUW-35-hTc"/>
+                            <constraint firstItem="NMU-fk-mUO" firstAttribute="top" secondItem="o5s-Vx-rHf" secondAttribute="bottom" constant="20" id="S7E-Fm-arj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Geh-ys-EJx" secondAttribute="bottom" constant="20" id="Vrv-Ry-pci"/>
+                            <constraint firstItem="o5s-Vx-rHf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZPC-KO-duM"/>
+                            <constraint firstItem="zAZ-F8-kyz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="aHM-Ih-CnV"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="zAZ-F8-kyz" secondAttribute="bottom" constant="230" id="bNx-w1-Jhj"/>
+                            <constraint firstAttribute="trailing" secondItem="iOu-3N-d2w" secondAttribute="trailing" id="csT-Kq-0Jb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iOu-3N-d2w" secondAttribute="bottom" id="ebO-fx-8zC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zAZ-F8-kyz" secondAttribute="trailing" constant="20" id="gci-7N-CX2"/>
+                            <constraint firstItem="iOu-3N-d2w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iP7-SW-wjO"/>
+                            <constraint firstItem="iOu-3N-d2w" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="j8O-ed-pwG"/>
+                            <constraint firstItem="zAZ-F8-kyz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="joo-ft-MtZ"/>
+                            <constraint firstItem="NMU-fk-mUO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="uJZ-9W-caW"/>
+                            <constraint firstItem="Geh-ys-EJx" firstAttribute="top" secondItem="o5s-Vx-rHf" secondAttribute="bottom" constant="20" id="ufO-uk-lKd"/>
+                            <constraint firstItem="o5s-Vx-rHf" firstAttribute="top" secondItem="zAZ-F8-kyz" secondAttribute="bottom" constant="20" id="xj6-t2-eSA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="S7E-Fm-arj"/>
+                                <exclude reference="56b-n2-MXR"/>
+                                <exclude reference="ufO-uk-lKd"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="card1" destination="wJt-mf-Z18" id="9Oh-Xs-NH7"/>
+                        <outlet property="card10" destination="3E2-Dc-g7m" id="UuN-pf-Oay"/>
+                        <outlet property="card11" destination="qJE-gF-YjN" id="UE0-fO-R9T"/>
+                        <outlet property="card12" destination="9ie-BB-dNz" id="FgG-HB-56D"/>
+                        <outlet property="card13" destination="bIg-in-MAg" id="k14-Zv-Mck"/>
+                        <outlet property="card14" destination="fhk-T2-167" id="kLY-gp-awt"/>
+                        <outlet property="card15" destination="eoG-aA-cmp" id="FfA-Yi-qgh"/>
+                        <outlet property="card16" destination="wJ7-ET-R93" id="QVQ-s9-o0z"/>
+                        <outlet property="card17" destination="XGc-yI-9Va" id="40j-U3-Lks"/>
+                        <outlet property="card18" destination="qdp-B8-u5i" id="J68-w6-95z"/>
+                        <outlet property="card19" destination="1mq-U8-klD" id="QEK-cA-Xt2"/>
+                        <outlet property="card2" destination="me7-hm-1wP" id="vWf-tQ-Rth"/>
+                        <outlet property="card20" destination="KNV-wl-i98" id="f22-Kq-qyz"/>
+                        <outlet property="card3" destination="bBg-uJ-7ac" id="Tnh-Lf-YXU"/>
+                        <outlet property="card4" destination="MBg-7r-soN" id="iXK-hN-CWl"/>
+                        <outlet property="card5" destination="sel-km-YU3" id="FcV-GM-uDb"/>
+                        <outlet property="card6" destination="nls-FH-fBf" id="n3K-dC-CDM"/>
+                        <outlet property="card7" destination="sjM-dI-n1F" id="zhC-K3-VAW"/>
+                        <outlet property="card8" destination="SpP-c4-HBM" id="C79-jn-2uj"/>
+                        <outlet property="card9" destination="sHl-pi-O2Y" id="9rb-NC-7g2"/>
+                        <outlet property="pauseBtn" destination="Geh-ys-EJx" id="1dc-Nx-SdT"/>
+                        <outlet property="restartBtn" destination="NMU-fk-mUO" id="bft-WB-b7S"/>
+                        <outlet property="timeLbl" destination="o5s-Vx-rHf" id="fbx-1F-IQE"/>
+                        <outletCollection property="btns" destination="wJt-mf-Z18" collectionClass="NSMutableArray" id="oMF-qy-v3X"/>
+                        <outletCollection property="btns" destination="me7-hm-1wP" collectionClass="NSMutableArray" id="EXG-li-fNU"/>
+                        <outletCollection property="btns" destination="bBg-uJ-7ac" collectionClass="NSMutableArray" id="wdq-JA-bkS"/>
+                        <outletCollection property="btns" destination="MBg-7r-soN" collectionClass="NSMutableArray" id="6PW-E7-oqi"/>
+                        <outletCollection property="btns" destination="sel-km-YU3" collectionClass="NSMutableArray" id="oZw-8e-EJe"/>
+                        <outletCollection property="btns" destination="nls-FH-fBf" collectionClass="NSMutableArray" id="P7Z-3x-kZP"/>
+                        <outletCollection property="btns" destination="sjM-dI-n1F" collectionClass="NSMutableArray" id="J1A-Ng-ff3"/>
+                        <outletCollection property="btns" destination="SpP-c4-HBM" collectionClass="NSMutableArray" id="0Z3-jw-f6F"/>
+                        <outletCollection property="btns" destination="sHl-pi-O2Y" collectionClass="NSMutableArray" id="gwD-h9-bWi"/>
+                        <outletCollection property="btns" destination="3E2-Dc-g7m" collectionClass="NSMutableArray" id="9YG-1s-exx"/>
+                        <outletCollection property="btns" destination="qJE-gF-YjN" collectionClass="NSMutableArray" id="Ahf-wK-AJ7"/>
+                        <outletCollection property="btns" destination="9ie-BB-dNz" collectionClass="NSMutableArray" id="VS2-8v-siW"/>
+                        <outletCollection property="btns" destination="bIg-in-MAg" collectionClass="NSMutableArray" id="P7I-ST-47m"/>
+                        <outletCollection property="btns" destination="fhk-T2-167" collectionClass="NSMutableArray" id="D37-tL-0Lz"/>
+                        <outletCollection property="btns" destination="eoG-aA-cmp" collectionClass="NSMutableArray" id="JBt-to-mYz"/>
+                        <outletCollection property="btns" destination="wJ7-ET-R93" collectionClass="NSMutableArray" id="TjD-wC-rOz"/>
+                        <outletCollection property="btns" destination="XGc-yI-9Va" collectionClass="NSMutableArray" id="ase-n7-Z1F"/>
+                        <outletCollection property="btns" destination="qdp-B8-u5i" collectionClass="NSMutableArray" id="Z0M-ZB-VpG"/>
+                        <outletCollection property="btns" destination="1mq-U8-klD" collectionClass="NSMutableArray" id="Zp9-ld-LqP"/>
+                        <outletCollection property="btns" destination="KNV-wl-i98" collectionClass="NSMutableArray" id="QPS-uY-Ldd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="209" y="637"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="card0" width="256" height="256"/>
+        <image name="pause" width="256" height="256"/>
+        <image name="restart" width="256" height="256"/>
+        <image name="wallpaper_dark_blue_2" width="1080" height="1920"/>
+    </resources>
 </document>
