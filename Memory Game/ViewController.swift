@@ -1,4 +1,5 @@
-//
+//  Vlad Babitsky
+//  Guy Isakov
 //  ViewController.swift
 //  Memory Game
 //
@@ -44,15 +45,11 @@ class ViewController: UIViewController {
     var goodCounter = 0
     var timeCounter = 0
     var isPlayingNow = true
-    
-//    let imageList: [String] = ["card1", "card2", "card3", card4, card5, card6, card7, card8, card9, card10, card11, card12, card13, "card14", "card15", card16, card17, card18, card19, card20]
+
     var cardList: [Int] = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10]
     var discoverList: [Bool] = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
-//    @IBOutlet weak var cards: UIButton! = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12, card13, card14, card15, card16, card17, card18, card19, card20]
     
     @IBOutlet var btns: Array<UIButton>?
-    
-//    let logoImages = [UIImageView](card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12, card13, card14, card15, card16, card17, card18, card19, card20)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,28 +60,6 @@ class ViewController: UIViewController {
         for btn in btns! {
             btn.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
         }
-//        card1.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card2.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card3.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card4.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card5.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card6.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card7.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card8.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card9.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card10.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card11.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card12.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card13.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card14.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card15.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card16.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card17.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card18.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card19.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-//        card20.addTarget(self,action:"cardClickListener:",forControlEvents:.TouchUpInside);
-        
-//        btns![0].setImage(UIImage(named: "card2"), forState: UIControlState.Normal)
 
         restartGame();
         
@@ -151,8 +126,6 @@ class ViewController: UIViewController {
             }
             
         }
-        
-        //print("\(isFirstClick) \(firstChoice) \(currentChoice)")
     }
 
     func clicableCards(value: Bool) {
